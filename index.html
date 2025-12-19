@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_logo.png" alt="Logo">
+
+
+    <h1>Cadastro de Usuários</h1>
+</header>
+
+<form onsubmit="cadastrar(); return false;">
+    <label>Nome:</label><br>
+    <input type="text" id="nome" required><br><br>
+
+    <label>Idade:</label><br>
+    <input type="number" id="idade" required><br><br>
+
+    <label>Empresa:</label><br>
+    <select id="empresa">
+        <option>Anjo Tintas</option>
+        <option>WEG</option>
+        <option>Outra</option>
+    </select><br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<h2>Usuários Cadastrados</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Empresa</th>
+        </tr>
+    </thead>
+    <tbody id="tabelaUsuarios"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
